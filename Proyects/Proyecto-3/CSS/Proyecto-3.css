@@ -1,0 +1,23 @@
+.body{
+    margin: 0;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__texto{
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.section__boton{
+    display: flex;
+    width: 20rem;
+    justify-content: center;
+    color: aliceblue;
+    background-color:blueviolet;
+    font-size: 1.5rem;
+}
