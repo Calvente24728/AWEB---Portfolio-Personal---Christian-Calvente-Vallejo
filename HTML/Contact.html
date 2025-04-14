@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/style.css">
-    <script src="../JS/Script.js" type="text/javascript"></script>
+    <script src="../JS/Script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -20,28 +20,43 @@
                 </ul>
             </nav>
         </header>
-        <main>
-            <h1 class="titulo">CONTACTAME</h1>
-            <section class="section">
-                <form class="section__form">
-                    <label class="section__form__label" for="nombre">Nombre</label>
-                    <input id="nombre" class="section__form__input" type="text" placeholder="Nombre">
-                    <label class="section__form__label" for="apellido">Apellido</label>
-                    <input id="apellido" class="section__form__input" type="text" placeholder="Apellido">
-                    <label class="section__form__label" for="email">Email</label>
-                    <input id="email" class="section__form__input" type="email" placeholder="Email">
-                    <label class="section__form__label" for="asunto">Asunto</label>
-                    <input id="asunto" class="section__form__input" type="text" placeholder="Asunto">
-                    <label class="section__form__label" for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" class="section__form__textarea" placeholder="Mensaje"></textarea>
-                    <button class="section__form__boton" type="submit">Enviar</button>  
-                </form>
-            </section>
-        </main>
-        <footer>
-            <img class="icono__correo" src="../Assets/gmail_logo.png" alt="icono correo"><h1 class="correo">ccalventevallejo@gmail.com</h1>
-            <img class="icono__telefono" src="../Assets/telefono.png" alt="icono telefono"><h1 class="telefono">+34 637552771</h1> 
-        </footer>
+        <div class="caja__main__footer">
+            <main>
+                <h1 class="titulo">CONTACTAME</h1>
+                <section class="section__contact">
+                    <form class="section__form">
+                        <ul class="section__menu">
+                            <li class="form__datos">
+                                <label class="section__form__label" for="nombre">Nombre</label>
+                                <input id="nombre" class="section__form__input__datos" type="text" placeholder="Nombre">
+                                <label class="section__form__label" for="apellido">Apellidos</label>
+                                <input id="apellido" class="section__form__input__datos" type="text" placeholder="Apellidos">
+                                <label class="section__form__label" for="email">Email</label>
+                                <input id="email" class="section__form__input__datos" type="email" placeholder="Email">
+                            </li>
+                            <li class="form__asunto">
+                                <label class="section__form__label" for="asunto">Asunto</label>
+                                <input id="asunto" class="section__form__input__asunto" type="text" placeholder="Asunto">
+                            </li>
+                            <li class="form__mensaje">
+                                <label class="section__form__label" for="mensaje">Mensaje</label>
+                                <textarea id="mensaje" class="section__form__textarea" placeholder="Mensaje"></textarea>
+                            </li>
+                            <li class="form__boton">
+                                <button class="section__form__boton" type="submit">Enviar</button>
+                            </li>
+                        </ul>
+                    </form>
+                </section>
+            </main>
+            <footer class="piepagina">
+                <ul class="piepagina__menu">
+                    <li class="piepagina__menu__lista"><img class="icono__pie" src="../Assets/gmail_logo.png" alt="icono correo"><h5 class="info__pie">ccalventevallejo@gmail.com</h5></li>
+                    <li class="piepagina__menu__lista"><img class="icono__pie" src="../Assets/github-blanco.png" alt="icono github"><h5 class="info__pie">Calvente24728</h5></li>
+                    <li class="piepagina__menu__lista"><img class="icono__pie" src="../Assets/telefono-blanco.png" alt="icono telefono"><h5 class="info__pie">+34 637552771</h5></li>
+                </ul>
+            </footer>
+        </div>
     </div>
 </body>
 </html>

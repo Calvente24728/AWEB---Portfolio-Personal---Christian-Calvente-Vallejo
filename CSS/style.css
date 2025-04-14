@@ -1,7 +1,7 @@
 body{
     margin: 0;
-    height: 100%;
-    background-color: aqua;
+    overflow: hidden;
+    background-color: #1A1A1A;
 }
 
 a{
@@ -14,7 +14,8 @@ ul{
 
 main {
     flex: 1;
-    padding: 20px;
+    padding: 0;
+    width: 100%;
   }
   
 /*---------------------------------HEADER--------------------------------*/
@@ -22,10 +23,11 @@ main {
 .container {
     display: flex;
     height: 100vh;
+    overflow: hidden;
   }
 
 .cabecera{
-    background: aliceblue;
+    background: #FFFFFF;
     display: flex;
     align-items: center;
     width: 20rem;
@@ -72,6 +74,10 @@ main {
     text-align: center;
 }
 
+.cabecera__menu__lista__enlace:hover{
+    color:#D4AF37;
+}
+
 /*------------------------------------------------------------------------------*/
 
 
@@ -102,10 +108,11 @@ width: 100%;
 justify-content: center;
 }
 
-.section__imagen{
+.section__imagen__left{
     width: 35rem;
     height: 48rem;
     padding-top: 1.9rem;
+    border-radius: 5rem 0 0 5rem;
 }
 
 .section__imagen__center{
@@ -114,11 +121,17 @@ justify-content: center;
     border-radius: 2rem;
 }
 
+.section__imagen__right{
+    width: 35rem;
+    height: 48rem;
+    padding-top: 1.9rem;
+    border-radius: 0 5rem 5rem 0;
+}
+
 .section__boton{
     display: flex;
     width: 100%;
     justify-content: center;
-    padding: 2rem;
 }
 
 .boton__proyect{
@@ -126,6 +139,7 @@ justify-content: center;
     font-size: 1rem;
     padding-right: 2rem;
     padding-left: 2rem;
+    margin: 2rem;
 }
 
 /*---------------------------------------------------------------------------------*/
@@ -133,6 +147,125 @@ justify-content: center;
 
 
 /*----------------------------------------MAIN(CONTACT)---------------------------*/
+
+.caja__main__footer{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.titulo{
+    color: #FFFFFF;
+}
+
+.section__contact{
+    width: 100%;
+    display: flex;
+    background-color: #333333;
+    margin: 0;
+}
+
+.section__form{
+    width: 100%;
+}
+
+.section__menu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.form__datos{
+    display: flex;
+    justify-content: center;
+}
+
+.section__form__label{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.section__form__input__datos{
+    font-size: 1rem;
+    width: 17rem;
+    height: 1.5rem;
+    padding: 0.4rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.form__asunto{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.section__form__input__asunto{
+    font-size: 1rem;
+    width: 29rem;
+    height: 1.5rem;
+    padding: 0.4rem;
+}
+
+.form__mensaje{
+    display: flex;
+    justify-content: center;
+}
+
+.section__form__textarea{
+    font-size: 1rem;
+    width: 66rem;
+    height: 38rem;
+}
+
+.form__boton{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.section__form__boton{
+    font-size: 1rem;
+    width: 7rem;
+    border-radius: 5rem;
+}
+
+.piepagina{
+    display: flex;
+    background-color:#1A1A1A;
+}
+
+.piepagina__menu{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.piepagina__menu__lista{
+    display: flex;
+    align-items: center;
+}
+
+.icono__pie{
+    display: flex;
+    width: 2rem;
+    margin: 0.4rem;
+}
+
+.info__pie{
+    font-size: 1rem;
+    color: #FFFFFF;
+}
 
 /*----------------------------------------FOOTER(CONTACT)---------------------------*/
 /*----------------------------------------------------------------------------------*/
