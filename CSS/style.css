@@ -32,7 +32,7 @@ main {
     align-items: center;
     width: 20rem;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 .figure__logo{
@@ -55,6 +55,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-block: 14rem;
 }
 
 .cabecera__menu__lista{
@@ -90,6 +91,109 @@ main {
 
 /*----------------------------------------MAIN(ABOUT)---------------------------*/
 
+.main__about{
+    flex: 1;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.fondo__curriculum{
+    display: flex;
+    width: 45%;
+    justify-content: center;
+    background-color: #333333;
+}
+
+.caja__curriculum{
+    display: flex;
+}
+
+.curriculum{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    margin: 3rem;
+}
+
+.curriculum__section__titulo{
+    color: #FFFFFF;
+    font-size: 2rem;
+    display: inline-block; /*para que el borde no se extienda de mas*/
+    border-bottom: 10px solid #FFFFFF;
+    border-bottom-left-radius: 4px ;
+    border-bottom-right-radius: 4px; 
+    padding-bottom: 0.5rem;
+}
+.curriculum__section__texto{
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+/*-------------------Secciones(Curriculum)-----------------*/
+
+.perfil{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.educacion{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin-top: 3rem;
+}
+
+.experiencia{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin-top: 3rem;
+}
+
+.idiomas{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin-top: 3rem;
+}
+
+/*--------------------------------------------------------*/
+
+.caja__presentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+    width: 75%;
+}
+
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+    
+}
+
+.presentacion__imagen{
+    width: 20rem;
+    border-radius: 3rem;
+}
+
+.presentacion__texto{
+    font-size: 2rem;
+    color:#1A1A1A;
+}
+
+.presentacion__titulo{
+    font-size: 2rem;
+    color:#1A1A1A;
+    margin: 0;
+}
+
 /*-----------------------------------------------------------------------------*/
 
 
@@ -97,6 +201,8 @@ main {
 /*----------------------------------------MAIN(PORTFOLIO)---------------------------*/
 
 .titulo{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
     display: flex;
     font-size: 7rem;
     justify-content: center;
@@ -140,6 +246,8 @@ justify-content: center;
     padding-right: 2rem;
     padding-left: 2rem;
     margin: 2rem;
+    background-color: #FFFFFF;
+    color:#1A1A1A;
 }
 
 /*---------------------------------------------------------------------------------*/
@@ -157,6 +265,8 @@ justify-content: center;
 }
 
 .titulo{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
     color: #FFFFFF;
 }
 
@@ -202,6 +312,7 @@ justify-content: center;
     padding: 0.4rem;
     margin-left: 3rem;
     margin-right: 3rem;
+    background-color:#FFFFFF;
 }
 
 .form__asunto{
@@ -238,6 +349,8 @@ justify-content: center;
     font-size: 1rem;
     width: 7rem;
     border-radius: 5rem;
+    background-color: #FFFFFF;
+    color:#1A1A1A;
 }
 
 .piepagina{
