@@ -16,8 +16,7 @@ main {
     flex: 1;
     padding: 0;
     width: 100%;
-  }
-  
+}
 /*---------------------------------HEADER--------------------------------*/
 
 .container {
@@ -84,7 +83,33 @@ main {
 
 
 /*----------------------------------------MAIN(INDEX)---------------------------*/
+.main__index{
+    display: flex;
+    background-image:url(..//Assets/escritorio.jpg);
+    background-size: cover; /*ajusta la imagen para cubrir el fondo*/
+    background-position: center;
+    justify-content: center;
+}
+.texto__izquierda{
+    font-size: 3rem;
+    padding-top: 38rem;
+    padding-left: 40rem;
+    margin-right: 7rem;
+    color: #FFFFFF;
+}
+.imagen__centro{
+    height: 10rem;
+    padding-top: 25rem;
+    padding-right: 17rem;
+}
+.texto__derecha{
+    font-size: 3rem;
+    padding-top: 38rem;
+    padding-left: 9rem;
+    margin-left: 2rem;
+    color:#D4AF37;
 
+}
 /*------------------------------------------------------------------------------*/
 
 
@@ -183,15 +208,27 @@ main {
     border-radius: 3rem;
 }
 
-.presentacion__texto{
-    font-size: 2rem;
+.presentacion__titulo{
+    font-size: 2.7rem;
     color:#1A1A1A;
+    width: 75%;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style:normal;
+    font-weight: 700;
+    margin-top: 1rem;
 }
 
-.presentacion__titulo{
-    font-size: 2rem;
+.presentacion__texto{
+    font-size: 1.5rem;
+    width: 90%;
     color:#1A1A1A;
     margin: 0;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
 }
 
 /*-----------------------------------------------------------------------------*/
@@ -353,6 +390,12 @@ justify-content: center;
     color:#1A1A1A;
 }
 
+/*----------------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------FOOTER(CONTACT)---------------------------*/
+
 .piepagina{
     display: flex;
     background-color:#1A1A1A;
@@ -380,5 +423,4 @@ justify-content: center;
     color: #FFFFFF;
 }
 
-/*----------------------------------------FOOTER(CONTACT)---------------------------*/
 /*----------------------------------------------------------------------------------*/
