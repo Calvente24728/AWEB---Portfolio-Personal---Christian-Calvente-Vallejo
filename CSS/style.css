@@ -1,7 +1,10 @@
 body{
+    display: flex;
     margin: 0;
     overflow: hidden;
     background-color: #1A1A1A;
+    cursor: url('../Assets/cursor.png') 16 16, auto;
+    height: 100vh;
 }
 
 a{
@@ -13,10 +16,14 @@ ul{
 }
 
 main {
-    flex: 1;
     padding: 0;
     width: 100%;
 }
+
+* {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* Para Safari */
+  }
 /*---------------------------------HEADER--------------------------------*/
 
 .container {
@@ -48,13 +55,14 @@ main {
 .cabecera__nav{
    width: 100%;
    display: flex;
+   flex-direction: column;
 }
 
 .cabecera__menu{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-block: 14rem;
+    margin-block: 13rem;
 }
 
 .cabecera__menu__lista{
@@ -85,29 +93,35 @@ main {
 /*----------------------------------------MAIN(INDEX)---------------------------*/
 .main__index{
     display: flex;
-    background-image:url(..//Assets/escritorio.jpg);
+    background-image:url(../Assets/escritorio__luzon.png);
     background-size: cover; /*ajusta la imagen para cubrir el fondo*/
     background-position: center;
     justify-content: center;
 }
 .texto__izquierda{
-    font-size: 3rem;
+    font-size: 2em;
     padding-top: 38rem;
-    padding-left: 40rem;
+    padding-left: 30rem;
     margin-right: 7rem;
     color: #FFFFFF;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 .imagen__centro{
     height: 10rem;
     padding-top: 25rem;
-    padding-right: 17rem;
+    padding-right: 2rem;
 }
 .texto__derecha{
-    font-size: 3rem;
+    font-size: 2rem;
     padding-top: 38rem;
-    padding-left: 9rem;
-    margin-left: 2rem;
+    padding-left: 15rem;
+    margin-left: 11rem;
     color:#D4AF37;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
 
 }
 /*------------------------------------------------------------------------------*/
@@ -237,12 +251,13 @@ main {
 
 /*----------------------------------------MAIN(PORTFOLIO)---------------------------*/
 
-.titulo{
+.titulo__portfolio{
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     display: flex;
     font-size: 7rem;
     justify-content: center;
+    color: #FFFFFF;
 }
 
 .section{
@@ -269,6 +284,7 @@ justify-content: center;
     height: 48rem;
     padding-top: 1.9rem;
     border-radius: 0 5rem 5rem 0;
+    transition: transform 1s ease-in-out;
 }
 
 .section__boton{
@@ -293,6 +309,12 @@ justify-content: center;
 
 /*----------------------------------------MAIN(CONTACT)---------------------------*/
 
+.main__contact{
+    padding: 0;
+    width: 100%;
+    height: 93%;
+}
+
 .caja__main__footer{
     display: flex;
     flex-direction: column;
@@ -301,10 +323,13 @@ justify-content: center;
     width: 100%;
 }
 
-.titulo{
+.titulo__contact{
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    font-size: 6rem;
 }
 
 .section__contact{
@@ -412,9 +437,14 @@ justify-content: center;
     align-items: center;
 }
 
+.piepagina__menu__a{
+    display: flex;
+    width: 100%;
+}
+
 .icono__pie{
     display: flex;
-    width: 2rem;
+    width: 3rem;
     margin: 0.4rem;
 }
 
@@ -424,3 +454,164 @@ justify-content: center;
 }
 
 /*----------------------------------------------------------------------------------*/
+
+/* Efecto 3D para el carrusel */
+.section {
+    perspective: 2000px; /* Profundidad de la escena 3D */
+}
+
+.section__imagen__left,
+.section__imagen__center,
+.section__imagen__right {
+    transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform-style: preserve-3d;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Estado inicial de las imágenes laterales */
+.section__imagen__left {
+    transform: translateX(5%) rotateY(-20deg) scale(0.9);
+    z-index: 1;
+    opacity: 0.8;
+}
+
+.section__imagen__right {
+    transform: translateX(-5%) rotateY(20deg) scale(0.9);
+    z-index: 1;
+    opacity: 0.8;
+}
+
+/* Estado inicial de la imagen central */
+.section__imagen__center {
+    transform: translateZ(100px) scale(1.05);
+    z-index: 2;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+}
+
+.section__imagen__center:hover{
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.section__imagen__left:hover,
+.section__imagen__right:hover {
+  transform: scale(0.9);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.section__imagen__center:hover{
+    transform: scale(1.1);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/*----------------------------------Desplegable__de__configuracíon-----------------------------*/
+/* Sombra permanente para profundidad */
+.section__imagen__left,
+.section__imagen__center,
+.section__imagen__right {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo básico del menú */
+.menu-desplegable {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    padding-left: 1rem;
+}
+
+/* Estilo del botón principal */
+.boton-menu {
+    background: #FFFFFF;
+    cursor: pointer;
+    border-radius: 14px;
+    width: 18%;
+}
+
+/* Estilo del submenú (oculto por defecto) */
+.submenu {
+    display: none;
+    position: absolute;
+    left: 24%; /* Esto hace que aparezca a la derecha */
+    top: 0; /* Alinea con la parte superior del botón */
+    background: #1A1A1A;
+    min-width: 8rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-radius: 4px;
+}
+
+/* Estilo de los items del menú */
+.submenu li a {
+    display: block;
+    padding: 0.5rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Cambio de color al pasar el ratón */
+.submenu li a:hover {
+    background: #333333;
+}
+
+/* Mostrar el submenú al pasar el ratón */
+.menu-desplegable:hover .submenu {
+    display: block;
+}
+
+.boton-menu-logo{
+    width: 100%;
+}
+
+
+/* ----------------------------------Modo oscuro------------------------------------*/
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+.dark-mode .cabecera {
+    background-color: #1e1e1e;
+    border-right: 1px solid #333;
+}
+
+.dark-mode .logo{
+    content: url(../Assets/c-removebg-preview.png);
+}
+
+.dark-mode .cabecera__menu__lista__enlace {
+    color: #f5f5f5;
+}
+
+.dark-mode .cabecera__menu__lista__logo{
+    filter: brightness(0) invert(1);
+}
+
+.dark-mode .main__index {
+    background-image: url(../Assets/escritorio__luzoff.png)
+}
+
+.dark-mode .submenu {
+    background-color: #2d2d2d;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .submenu li a {
+    color: #f5f5f5;
+}
+
+.dark-mode .submenu li a:hover {
+    background-color: #3d3d3d;
+}
+
+.dark-mode .boton-menu{
+    background-color:#1e1e1e;
+}
+
+.dark-mode .boton-menu-logo{
+    content: url(../Assets/configuracion2.png);
+}

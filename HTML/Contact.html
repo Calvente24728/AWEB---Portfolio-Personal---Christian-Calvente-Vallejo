@@ -11,55 +11,59 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header class="cabecera">
-            <figure class="figure__logo"><img class="logo" src="../Assets/ce.png" alt="logo principal"></figure>
-            <nav class="cabecera__nav">
-                <ul class="cabecera__menu">
-                    <li class="cabecera__menu__lista"><img class="cabecera__menu__lista__logo" src="../Assets/casa.png" alt="icono casa"><a class="cabecera__menu__lista__enlace" href="../index.html">Casa</a></li>
-                    <li class="cabecera__menu__lista"><img class="cabecera__menu__lista__logo" src="../Assets/persona.png" alt="icono sobre mi"><a class="cabecera__menu__lista__enlace" href="../HTML/About.html">Sobre mi</a></li>
-                    <li class="cabecera__menu__lista"><img class="cabecera__menu__lista__logo" src="../Assets/maletin.png" alt="icono portfolio"><a class="cabecera__menu__lista__enlace" href="../HTML/Portfolio.html">Portfolio</a></li>
-                    <li class="cabecera__menu__lista"><img class="cabecera__menu__lista__logo" src="../Assets/telefono.png" alt="icono contacto"><a class="cabecera__menu__lista__enlace" href="../HTML/Contact.html">Contacto</a></li>
+    <header class="cabecera">
+        <figure class="figure__logo"><img class="logo" src="../Assets/ce.png" alt="logo principal"></figure>
+        <nav class="cabecera__nav">
+            <ul class="cabecera__menu">
+                <li class="cabecera__menu__lista"><img class="cabecera__menu__lista__logo" src="../Assets/casa.png" alt="icono casa"><a class="cabecera__menu__lista__enlace" href="../index.html">Inicio</a></li>
+                <li class="cabecera__menu__lista"><img class="cabecera__menu__lista__logo" src="../Assets/persona.png" alt="icono sobre mi"><a class="cabecera__menu__lista__enlace" href="../HTML/About.html">Sobre mi</a></li>
+                <li class="cabecera__menu__lista"><img class="cabecera__menu__lista__logo" src="../Assets/maletin.png" alt="icono portfolio"><a class="cabecera__menu__lista__enlace" href="../HTML/Portfolio.html">Portfolio</a></li>
+                <li class="cabecera__menu__lista"><img class="cabecera__menu__lista__logo" src="../Assets/telefono.png" alt="icono contacto"><a class="cabecera__menu__lista__enlace" href="../HTML/Contact.html">Contacto</a></li>
+            </ul>
+            <nav class="menu-desplegable">
+                <button class="boton-menu"><img class="boton-menu-logo" src="../Assets/configuracion.gif" alt="logo__configuración"></button>
+                <ul class="submenu">
+                    <li><a href="#" id="Darkmode">Darkmode</a></li>
                 </ul>
             </nav>
-        </header>
-        <div class="caja__main__footer">
-            <main>
-                <h1 class="titulo">CONTACTAME</h1>
-                <section class="section__contact">
-                    <form class="section__form">
-                        <ul class="section__menu">
-                            <li class="form__datos">
-                                <label class="section__form__label" for="nombre">Nombre</label>
-                                <input id="nombre" class="section__form__input__datos" type="text" placeholder="Nombre">
-                                <label class="section__form__label" for="apellido">Apellidos</label>
-                                <input id="apellido" class="section__form__input__datos" type="text" placeholder="Apellidos">
-                                <label class="section__form__label" for="email">Email</label>
-                                <input id="email" class="section__form__input__datos" type="email" placeholder="Email">
-                            </li>
-                            <li class="form__asunto">
-                                <label class="section__form__label" for="asunto">Asunto</label>
-                                <input id="asunto" class="section__form__input__asunto" type="text" placeholder="Asunto">
-                            </li>
-                            <li class="form__mensaje">
-                                <label class="section__form__label" for="mensaje">Mensaje</label>
-                                <textarea id="mensaje" class="section__form__textarea" placeholder="Mensaje"></textarea>
-                            </li>
-                            <li class="form__boton">
-                                <button class="section__form__boton" type="submit">Enviar</button>
-                            </li>
-                        </ul>
-                    </form>
-                </section>
-            </main>
-            <footer class="piepagina">
-                <ul class="piepagina__menu">
-                    <li class="piepagina__menu__lista"><img class="icono__pie" src="../Assets/gmail_logo.png" alt="icono correo"><h5 class="info__pie">ccalventevallejo@gmail.com</h5></li>
-                    <li class="piepagina__menu__lista"><img class="icono__pie" src="../Assets/github-blanco.png" alt="icono github"><h5 class="info__pie">Calvente24728</h5></li>
-                    <li class="piepagina__menu__lista"><img class="icono__pie" src="../Assets/telefono-blanco.png" alt="icono telefono"><h5 class="info__pie">+34 637552771</h5></li>
-                </ul>
-            </footer>
-        </div>
-    </div>
+        </nav>
+    </header>
+    <section class="caja__main__footer">
+        <main class="main__contact">
+            <h1 class="titulo__contact">CONTACTAME</h1>
+            <section class="section__contact">
+                <form class="section__form" action="https://formspree.io/f/xgvkaakv" method="POST">
+                    <ul class="section__menu">
+                        <li class="form__datos">
+                            <label class="section__form__label" for="nombre">Nombre</label>
+                            <input id="nombre" class="section__form__input__datos" type="text" placeholder="Nombre">
+                            <label class="section__form__label" for="apellido">Apellido</label>
+                            <input id="apellido" class="section__form__input__datos" type="text" placeholder="Apellido">
+                            <label class="section__form__label" for="email">Email</label>
+                            <input id="email" class="section__form__input__datos" type="email" name="email" placeholder="Email">
+                        </li>
+                        <li class="form__asunto">
+                            <label class="section__form__label" for="asunto">Asunto</label>
+                            <input id="asunto" class="section__form__input__asunto" type="text" placeholder="Asunto">
+                        </li>
+                        <li class="form__mensaje">
+                            <label class="section__form__label" for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" class="section__form__textarea" name="message" placeholder="Mensaje"></textarea>
+                        </li>
+                        <li class="form__boton">
+                            <button class="section__form__boton" type="submit">Enviar</button>
+                        </li>
+                    </ul>
+                </form>
+            </section>
+        </main>
+        <footer class="piepagina">
+            <ul class="piepagina__menu">
+                <li class="piepagina__menu__lista"><a class="piepagina__menu__a" href="https://mail.google.com/mail/?view=cm&fs=1&to=ccalventevallejo@gmail.com&su=Asunto&body=Mensaje"><img class="icono__pie" src="../Assets/gmail_logo.png" alt="icono correo"><h5 class="info__pie">ccalventevallejo@gmail.com</h5></a></li>
+                <li class="piepagina__menu__lista"><a class="piepagina__menu__a" href="https://github.com/Calvente24728"><img class="icono__pie" src="../Assets/github-blanco.png" alt="icono github"><h5 class="info__pie">Calvente24728</h5></a></li>
+                <li class="piepagina__menu__lista"><a class="piepagina__menu__a" href="tel:637225771"><img class="icono__pie" src="../Assets/telefono-blanco.png" alt="icono telefono"><h5 class="info__pie">+34 637552771</h5></a></li>
+            </ul>
+        </footer>
+    </section>
 </body>
 </html>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/style.css">
-    <script src="./JS/Script.js" type="text/javascript"></script>
+    <script src="../JS/Script.js" type="text/javascript"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -14,56 +14,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header class="cabecera">
-            <figure class="figure__logo"><img class="logo" src="../Assets/ce.png" alt="logo principal"></figure>
-            <nav class="cabecera__nav">
-                <ul class="cabecera__menu">
-                    <li class="cabecera__menu__lista"><img class="cabecera__menu__lista__logo" src="../Assets/casa.png" alt="icono casa"><a class="cabecera__menu__lista__enlace" href="../index.html">Casa</a></li>
-                    <li class="cabecera__menu__lista"><img class="cabecera__menu__lista__logo" src="../Assets/persona.png" alt="icono sobre mi"><a class="cabecera__menu__lista__enlace" href="../HTML/About.html">Sobre mi</a></li>
-                    <li class="cabecera__menu__lista"><img class="cabecera__menu__lista__logo" src="../Assets/maletin.png" alt="icono portfolio"><a class="cabecera__menu__lista__enlace" href="../HTML/Portfolio.html">Portfolio</a></li>
-                    <li class="cabecera__menu__lista"><img class="cabecera__menu__lista__logo" src="../Assets/telefono.png" alt="icono contacto"><a class="cabecera__menu__lista__enlace" href="../HTML/Contact.html">Contacto</a></li>
+    <header class="cabecera">
+        <figure class="figure__logo"><img class="logo" src="../Assets/ce.png" alt="logo principal"></figure>
+        <nav class="cabecera__nav">
+            <ul class="cabecera__menu">
+                <li class="cabecera__menu__lista"><img class="cabecera__menu__lista__logo" src="../Assets/casa.png" alt="icono casa"><a class="cabecera__menu__lista__enlace" href="../index.html">Inicio</a></li>
+                <li class="cabecera__menu__lista"><img class="cabecera__menu__lista__logo" src="../Assets/persona.png" alt="icono sobre mi"><a class="cabecera__menu__lista__enlace" href="../HTML/About.html">Sobre mi</a></li>
+                <li class="cabecera__menu__lista"><img class="cabecera__menu__lista__logo" src="../Assets/maletin.png" alt="icono portfolio"><a class="cabecera__menu__lista__enlace" href="../HTML/Portfolio.html">Portfolio</a></li>
+                <li class="cabecera__menu__lista"><img class="cabecera__menu__lista__logo" src="../Assets/telefono.png" alt="icono contacto"><a class="cabecera__menu__lista__enlace" href="../HTML/Contact.html">Contacto</a></li>
+            </ul>
+            <nav class="menu-desplegable">
+                <button class="boton-menu"><img class="boton-menu-logo" src="../Assets/configuracion.gif" alt="logo__configuración"></button>
+                <ul class="submenu">
+                    <li><a href="#" id="Darkmode">Darkmode</a></li>
                 </ul>
             </nav>
-        </header>
-        <main class="main__about">
-            <div class="fondo__curriculum">
-                <div class="caja__curriculum">
-                    <div class="curriculum">
-                        <section class="perfil">
-                            <h2 class="curriculum__section__titulo">Perfil</h2>
-                            <p class="curriculum__section__texto">Soy un técnico de sistemas microinformáticos y redes motivado en aprender y mejorar. Tengo habilidades de comunicación y habilidades en equipo que me permiten ofrecer buenas soluciones .</p>
-                        </section>
-                        <section class="educacion">
-                            <h2 class="curriculum__section__titulo">Educación</h2>
-                            <p class="curriculum__section__texto">2025 Técnico en Sistemas Microinformáticos y Redes. IES Rafael Alberti. Cádiz</p>
-                            <p class="curriculum__section__texto">2023 Educación Secundaria Obligatoria.
-                                IES Pablo Ruiz Picasso. Chiclana de la Frontera (Cádiz)
-                            </p>
-                        </section>
-                        <section class="experiencia">
-                            <h2 class="curriculum__section__titulo">Experiencia</h2>
-                            <p class="curriculum__section__texto">2025 Practicas de Técnico en Sistemas Microinformáticos y Redes.
-                                Raini Computer. Cádiz
-                            </p>
-                        </section>
-                        <section class="idiomas">
-                            <h2 class="curriculum__section__titulo">Idiomas</h2>
-                            <p class="curriculum__section__texto">Inges</p>
-                        </section>    
-                    </div>
-                    <div class="caja__presentacion">
-                        <figure>
-                            <img class="presentacion__imagen" src="../Assets/foto-personal.jpg" alt="Foto personal">
-                        </figure>
-                        <section class="presentacion">
-                            <h2 class="presentacion__titulo">CHRISTIAN CALVENTE VALLEJO</h2>
-                            <h5 class="presentacion__texto">Técnico en sistemas microinformaticos y redes</h5>
-                        </section>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </div>
+        </nav>
+    </header>
+    <main class="main__about">
+        <section class="fondo__curriculum">
+            <section class="caja__curriculum">
+                <section class="curriculum">
+                    <article class="perfil">
+                        <h2 class="curriculum__section__titulo">Perfil</h2>
+                        <p class="curriculum__section__texto">Soy un técnico de sistemas microinformáticos y redes motivado en aprender y mejorar. Tengo habilidades de comunicación y habilidades en equipo que me permiten ofrecer buenas soluciones .</p>
+                    </article>
+                    <article class="educacion">
+                        <h2 class="curriculum__section__titulo">Educación</h2>
+                        <p class="curriculum__section__texto">2025 Técnico en Sistemas Microinformáticos y Redes. IES Rafael Alberti. Cádiz</p>
+                        <p class="curriculum__section__texto">2023 Educación Secundaria Obligatoria.
+                            IES Pablo Ruiz Picasso. Chiclana de la Frontera (Cádiz)
+                        </p>
+                    </article>
+                    <article class="experiencia">
+                        <h2 class="curriculum__section__titulo">Experiencia</h2>
+                        <p class="curriculum__section__texto">2025 Practicas de Técnico en Sistemas Microinformáticos y Redes.
+                            Raini Computer. Cádiz
+                        </p>
+                    </article>
+                    <article class="idiomas">
+                        <h2 class="curriculum__section__titulo">Idiomas</h2>
+                        <p class="curriculum__section__texto">Ingles</p>
+                    </article>    
+                </section>
+                <section class="caja__presentacion">
+                    <figure>
+                        <img class="presentacion__imagen" src="../Assets/foto-personal.jpg" alt="Foto personal">
+                    </figure>
+                    <article class="presentacion">
+                        <h2 class="presentacion__titulo">CHRISTIAN CALVENTE VALLEJO</h2>
+                        <h5 class="presentacion__texto">Técnico en sistemas microinformaticos y redes</h5>
+                    </article>
+                </section>
+            </section>
+        </section>
+    </main>
 </body>
 </html>
